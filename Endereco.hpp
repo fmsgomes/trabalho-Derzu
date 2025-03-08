@@ -25,6 +25,30 @@ class Endereco{
     string getCEP()const{return CEP;}
     string getComplemento()const{return complemento;}
 
+    void lerEndereco(){
+        cout << "\nRua: ";
+        cin.ignore();
+        getline(cin, rua);
+        cout << "\nNúmero da casa: ";
+        cin >> num;
+        cin.ignore();
+        while(num < 0){
+            cout << "\nNúmero inválido. Digite um número positivo: ";
+            cin >> num;
+            cin.ignore();
+        }
+        cout << "\nBairro: ";
+        getline(cin, bairro);
+        cout << "\nCidade: ";
+        getline(cin, cidade);
+        cout << "\nEstado: ";
+        getline(cin, estado);
+        cout << "\nCEP: ";
+        getline(cin, CEP);
+        cout << "\nComplemento: ";
+        getline(cin, complemento);
+    }
+
     void imprimirEndereco()const{
         cout << getRua() << ", " << getNum() << ", " << getBairro() << ", " << getCidade() <<
          ", "<<getEstado() << ", " << getCEP() << ", " << getComplemento();

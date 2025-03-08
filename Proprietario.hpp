@@ -32,6 +32,22 @@ class Proprietario{
     Data getDataNascimento()const{return data_nascimento;}
     Data getTempoHabilitacao()const{return tempo_habilitacao;}
 
+    void lerDadosProprietario(){
+        cout << "Insira os dados seguintes para cadastrar o Proprietário:\n";
+        cout << "Nome do proprietário: ";
+        cin.ignore();
+        getline(cin, nome);
+        cout << "\nTelefone do proprietário: ";
+        getline(cin, telefone);
+        cout << "\nEndereço do proprietário: ";
+        endereco.lerEndereco();
+        cout << "\nData de Nascimento do proprietário: ";
+        data_nascimento.lerData();
+        cout << "\nTempo de habilitação do proprietário: ";
+        tempo_habilitacao.lerData();
+
+    }
+
     void ImprimirProprietario()const{
         cout << "Nome: " << getNome() <<endl;
         cout << "Telefone: " << getTelefone() <<endl;
