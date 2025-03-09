@@ -13,6 +13,6 @@ class Planocompleto : public Plano{
     void imprimirPlano()const override{
         exibirveiculo();
         exibirproprietario();
-        getFipeVeiculo();
+        cout << "\nValor do plano: R$ " << calculoPlano();
     }
 };

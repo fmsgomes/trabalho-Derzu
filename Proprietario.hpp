@@ -51,8 +51,11 @@ class Proprietario{
     void ImprimirProprietario()const{
         cout << "Nome: " << getNome() <<endl;
         cout << "Telefone: " << getTelefone() <<endl;
-        cout << "Endereco: " << getEndereco().imprimirEndereco() <<endl;
-        cout << "Data de Nascimento: " << getDataNascimento().imprimirData()<<endl;
-        cout << "Tempo de Habilitação: " << getTempoHabilitacao().imprimirData() <<endl;
+        cout << "Endereco: ";
+        getEndereco().imprimirEndereco();
+        cout << "Data de Nascimento: "; 
+        getDataNascimento().imprimirData();
+        cout << "Tempo de Habilitação: ";
+        getTempoHabilitacao().imprimirData();
     }
 };

@@ -13,5 +13,6 @@ class Planobasico : public Plano{
     void imprimirPlano()const override{
         exibirveiculo();
         exibirproprietario();
+        cout << "\nValor do plano: R$ " << calculoPlano();
     }
 };

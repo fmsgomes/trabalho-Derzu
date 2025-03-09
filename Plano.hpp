@@ -18,10 +18,10 @@ class Plano{
     void adicionarProprietario(){
         proprietario.lerDadosProprietario();
     }
-    void exibirveiculo(){
+    void exibirveiculo()const{
         veiculo.ImprimirVeiculo();
     }
-    void exibirproprietario(){
+    void exibirproprietario()const{
         proprietario.ImprimirProprietario();
     }
     float getFipeVeiculo(){return veiculo.getFipe();}
