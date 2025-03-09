@@ -6,13 +6,11 @@ using namespace std;
 
 class Plano{
     protected:
-    int tipo;
     DadosVeiculo veiculo;
     Proprietario proprietario;
 
     public:
-    Plano(int t) : tipo(t){}
-    Plano(int t, DadosVeiculo d, Proprietario p) : tipo(t), veiculo(d), proprietario(p){}
+    Plano(DadosVeiculo d, Proprietario p) : veiculo(d), proprietario(p){}
 
     void adicionarVeiculo(){
         veiculo.lerDadosVeiculo();
@@ -26,6 +24,7 @@ class Plano{
     void exibirproprietario(){
         proprietario.ImprimirProprietario();
     }
-    virtual void calculoPlano() = 0;
-    virtual void calculoPlano() = 0;
+    float getFipeVeiculo(){return veiculo.getFipe();}
+    virtual float calculoPlano() = 0;
+    virtual void imprimirPlano() = 0;
 };
