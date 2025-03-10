@@ -15,7 +15,6 @@ int main() {
     int opcao;
     int indice;
 
-
     while(opcao != 6){
         cout << "\nMenu de Operações:\n";
         cout << "1 - Adicionar Plano\n";
