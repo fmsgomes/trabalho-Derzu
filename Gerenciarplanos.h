@@ -25,9 +25,6 @@ class Gerenciarplanos {
             plano[i] = nullptr;
         }
     }
-    ~Gerenciarplanos(){
-        deletarPlanos();
-    }
 
     void deletarPlanos(){
         Plano* planoencontrado = buscarPlanos();

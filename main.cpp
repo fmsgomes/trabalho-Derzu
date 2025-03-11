@@ -51,6 +51,7 @@ int main() {
                 sistema.salvarDadosEmArquivo();
                 cout << "\nSaindo do sistema...\n";
             return 0;
+            break;
             default:
                 cout << "\nOpção inválida! Tente novamente.\n";
             break;
